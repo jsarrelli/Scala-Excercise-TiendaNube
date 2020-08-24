@@ -81,7 +81,6 @@ object Async extends AsyncInterface {
       callbackBasedApi.computeIntAsync {
         case Success(value) =>
           promise success value
-          value
         case Failure(ex) =>
           promise failure ex
       }
